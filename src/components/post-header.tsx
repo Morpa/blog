@@ -3,7 +3,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import PostViews from './post-views'
-import Author from 'types/author'
+import { Author } from 'pages/posts/[slug]'
 
 type Props = {
   title: string

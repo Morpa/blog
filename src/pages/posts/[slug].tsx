@@ -10,7 +10,7 @@ import PostHeader from 'components/post-header'
 import PostTitle from 'components/post-title'
 
 import { getPostBySlug, getAllPosts } from 'lib/api'
-import { CMS_NAME } from 'lib/constants'
+
 import markdownToHtml from 'lib/markdownToHtml'
 
 import { useFetch } from 'lib/fetcher'
@@ -57,9 +57,7 @@ const Post = ({ post }: Props) => {
           <>
             <article className="mb-32">
               <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
+                <title>{post.title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader

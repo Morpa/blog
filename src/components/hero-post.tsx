@@ -2,9 +2,10 @@ import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import Author from 'types/author'
+
 import { useFetch } from 'lib/fetcher'
 import PostViews from './post-views'
+import { Author } from 'pages/posts/[slug]'
 
 type Props = {
   title: string
@@ -26,7 +27,6 @@ const HeroPost = ({
   const { data } = useFetch(`/api/page-views-preview?id=${slug}`, true)
 
   const views = data?.total
-  console.log(views)
 
   return (
     <section>
