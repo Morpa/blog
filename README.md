@@ -35,8 +35,8 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🎮 Playground
 
-- [Site](http://blog-rocketseat.vercel.app/)
-- [API](https://blog-rocketseat.vercel.app/api/page-views-preview?id=1)
+- [Site](https://morpablog.vercel.app/)
+- [API](https://morpablog.vercel.app/api/page-views-preview?id=1)
 
 ## 📝 Licença
 
