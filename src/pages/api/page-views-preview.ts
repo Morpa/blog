@@ -1,10 +1,11 @@
-import { connectToDatabase } from 'config/mongodb'
 import { NextApiRequest, NextApiResponse } from 'next'
+
+import { connectToDatabase } from 'config/mongodb'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const slug = req.query.id
 
-  if (!slug) return res.json('Página não encontrada!')
+  if (!slug) return res.json('Page not found!')
 
   const { db, client } = await connectToDatabase()
 
@@ -12,6 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const pageViewBySlug = await db.collection('pageviews').findOne({ slug })
 
     let total = 0
+
     if (pageViewBySlug) {
       total = pageViewBySlug.total
     }
