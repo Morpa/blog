@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import PostViews from 'components/post-views'
 import { useFetch } from 'lib/fetcher'
-import { Author } from 'pages/posts/[slug]'
+import Author from 'types/author'
 
 type Props = {
   title: string

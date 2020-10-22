@@ -14,24 +14,7 @@ import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 
 import { useFetch } from 'lib/fetcher'
-
-export type Author = {
-  name: string
-  picture: string
-}
-
-export type PostType = {
-  slug: string
-  title: string
-  date: string
-  coverImage: string
-  author: Author
-  excerpt: string
-  ogImage: {
-    url: string
-  }
-  content: string
-}
+import PostType from 'types/post'
 
 type Props = {
   post: PostType
