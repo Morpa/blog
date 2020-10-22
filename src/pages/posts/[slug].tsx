@@ -2,26 +2,43 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 
-import Container from 'components/container'
-import PostBody from 'components/post-body'
-import Header from '../../components/header'
-import PostHeader from 'components/post-header'
 import Layout from 'components/layout'
-import { getPostBySlug, getAllPosts } from 'lib/api'
+import Container from 'components/container'
+import Header from 'components/header'
+import PostBody from 'components/post-body'
+import PostHeader from 'components/post-header'
 import PostTitle from 'components/post-title'
+
+import { getPostBySlug, getAllPosts } from 'lib/api'
 import { CMS_NAME } from 'lib/constants'
 import markdownToHtml from 'lib/markdownToHtml'
-import PostType from 'types/post'
 
 import { useFetch } from 'lib/fetcher'
+
+export type Author = {
+  name: string
+  picture: string
+}
+
+export type PostType = {
+  slug: string
+  title: string
+  date: string
+  coverImage: string
+  author: Author
+  excerpt: string
+  ogImage: {
+    url: string
+  }
+  content: string
+}
 
 type Props = {
   post: PostType
   morePosts: PostType[]
-  preview?: boolean
 }
 
-const Post = ({ post, preview }: Props) => {
+const Post = ({ post }: Props) => {
   const router = useRouter()
 
   if (!router.isFallback && !post?.slug) {
@@ -31,7 +48,7 @@ const Post = ({ post, preview }: Props) => {
   const { data } = useFetch(`/api/page-views?id=${post.slug}`)
 
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
         <Header />
         {router.isFallback ? (

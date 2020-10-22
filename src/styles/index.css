@@ -4,15 +4,15 @@
 
 body {
   background-color: #e8ffff;
-  color: #213e3b;
+  color: #06092B;
 }
 
 h1 {
-  color: #14274e;
+  color: #FF6347;
 }
 
 h3 {
-  color: #7579e7;
+  color: #EAEAEA;
 }
 
 .dark-mode {
@@ -26,11 +26,11 @@ h3 {
   }
 
   h1 {
-    color: #7579e7;
+    color: #EAEAEA;
   }
 
   h3 {
-    color: #69779b;
+    color: #FF6347;
   }
 
   img {
