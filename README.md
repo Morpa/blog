@@ -10,16 +10,14 @@
 <p align="center">
   <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
 
-  <img src="https://img.shields.io/github/stars/rocketseat-content/blog-nextjs-mongodb-vercel?label=stars&message=MIT&color=8257E6&labelColor=121214" alt="Stars">  
+  <img src="https://img.shields.io/github/stars/rocketseat-content/blog-nextjs-mongodb-vercel?label=stars&message=MIT&color=8257E6&labelColor=121214" alt="Stars">
 </p>
 
 <br>
 
-
 ## 💻 Projeto
 
-Criamos um Blog com NextJS e fizemos um post no [blog da Rocketseat](http://blog.rocketseat.com.br/) 💜 
-
+Blog com NextJS
 
 ## 🚀 Tecnologias
 
@@ -28,17 +26,17 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [NextJS](https://nextjs.org/)
 - [MongoDB](https://expressjs.com/pt-br/)
 - [React](https://reactjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
 
 ## 🌐 Hospedagem
 
 - [Mongo Atlas](https://cloud.mongodb.com/)
-- [Vercel](https://vercel.com/dashboard)
+- [Netlify](https://www.netlify.com/)
 
 ## 🎮 Playground
 
 - [Site](http://blog-rocketseat.vercel.app/)
 - [API](https://blog-rocketseat.vercel.app/api/page-views-preview?id=1)
-
 
 ## 📝 Licença
 
@@ -46,6 +44,4 @@ Fique a vontade <3
 
 ---
 
-<p align="center">Desenvolvido com 💜 por Thiago Marinho | AX @ Rocketseat</p>
-
-
+<p align="center">Desenvolvido por Morpa </p>

@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
-    "typecheck": "tsc --project tsconfig.json --noEmit"
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "deploy": "yarn build && next export"
   },
   "husky": {
     "hooks": {
